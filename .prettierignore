@@ -1,0 +1,6 @@
+**/build
+**/types
+
+**/node_modules
+
+!.prettierrc.js

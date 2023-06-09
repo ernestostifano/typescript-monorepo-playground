@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@scope/*": ["./packages/*"]
+        },
+        "target": "ESNext",
+        "lib": ["ESNext"],
+        "module": "ESNext",
+        "moduleResolution": "NodeNext",
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": false,
+        "allowJs": false,
+        "checkJs": false,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "allowUnreachableCode": false,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "removeComments": false,
+        "noEmitOnError": true,
+        "declaration": true,
+        "declarationMap": true
+    }
+}

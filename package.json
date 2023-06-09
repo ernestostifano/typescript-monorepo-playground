@@ -1,0 +1,29 @@
+{
+    "name": "typescript-monorepo-playground",
+    "private": true,
+    "license": "MIT",
+    "packageManager": "yarn@3.6.0",
+    "workspaces": {
+        "packages": [
+            "packages/**"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ernestostifano/typescript-monorepo-playground.git"
+    },
+    "files": [],
+    "scripts": {
+        "build": "tsc --build",
+        "cleanup": "rimraf --glob \"./packages/*/build\" \"./packages/*/types\" \"./packages/*/*.tsbuildinfo\" \"./**/node_modules\"",
+        "format": "prettier --loglevel warn --write \"**/*.{ts,tsx,js,jsx,json,md,yml}\"",
+        "sync:references": "workspaces-to-typescript-project-references --includesRoot"
+    },
+    "devDependencies": {
+        "@monorepo-utils/workspaces-to-typescript-project-references": "^2.9.0",
+        "@types/node": "^20.2.5",
+        "prettier": "^2.8.8",
+        "rimraf": "^4.1.2",
+        "typescript": "^4.9.5"
+    }
+}

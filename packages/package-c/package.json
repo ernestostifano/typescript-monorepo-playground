@@ -1,0 +1,22 @@
+{
+    "name": "@scope/package-c",
+    "version": "1.0.0-beta.1",
+    "type": "module",
+    "types": "./types/index.d.ts",
+    "module": "./build/index.js",
+    "main": "./build/index.js",
+    "exports": {
+        ".": {
+            "types": "./types/index.d.ts",
+            "import": "./build/index.js",
+            "default": "./build/index.js"
+        }
+    },
+    "files": [
+        "build",
+        "types"
+    ],
+    "dependencies": {
+        "@scope/package-b": "workspace:*"
+    }
+}
